@@ -1,4 +1,4 @@
-//@Arthur Tyon Davis
+//@Authur Tyon Davis
 
 import java.util.ArrayList;
 import java.util.List;
