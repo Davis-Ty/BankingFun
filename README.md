@@ -1,11 +1,8 @@
 # BankingFun
-simulates a banking system. It consists of several classes:
+This is a Java program that demonstrates object-oriented programming concepts like inheritance, polymorphism, and encapsulation using a banking system as an example.
 
-The Account class represents a bank account and has methods for depositing and withdrawing money, checking the balance, and getting the account number.
-The SavingsAccount class extends the Account class and adds an interest rate to the account.
-The CheckingAccount class also extends the Account class and allows for overdrafts within a certain limit.
-The Bank class manages a list of accounts and has methods for adding and removing accounts, as well as searching for an account by account number.
-The Main class is the entry point of the program and creates several accounts, adds them to the bank, and performs transactions between them.
-The program uses the ReentrantLock class for thread safety when accessing shared resources (i.e., the account balance). The withdraw method is overridden in the SavingsAccount and CheckingAccount classes to ensure that the balance cannot be negative or overdrafted beyond the limit, respectively.
+The program defines three classes: Account, SavingsAccount, and CheckingAccount. The Account class is the base class for the other two and defines basic functionality like depositing and withdrawing money from an account. SavingsAccount and CheckingAccount classes extend the Account class and add specific functionality like calculating interest and allowing overdrafts respectively.
 
-Overall, the program demonstrates some basic concepts of object-oriented programming in Java and simulates the basic functionality of a banking system.
+The Bank class is also defined which manages a collection of accounts and provides methods for adding/removing accounts, getting the total balance of all accounts, and transferring money between accounts.
+
+The main method in the BankingFun class creates a new Bank object and adds four different types of accounts to it. It then performs various operations on these accounts like withdrawing, depositing, and transferring money and prints the updated balances to the console.
